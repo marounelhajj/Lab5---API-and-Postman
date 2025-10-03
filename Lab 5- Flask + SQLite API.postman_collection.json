@@ -129,6 +129,55 @@
 					],
 					"cookie": [],
 					"body": "{}"
+				},
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/users/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.12.5"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 03 Oct 2025 19:08:56 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "129"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"address\": \"Beirut\",\n    \"country\": \"Lebanon\",\n    \"email\": \"john.updated@example.com\",\n    \"name\": \"John Updated\",\n    \"phone\": \"70111111\",\n    \"user_id\": 1\n}"
 				}
 			]
 		},
@@ -388,6 +437,70 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"address\": \"Hamra\",\n    \"country\": \"Lebanon\",\n    \"email\": \"john@example.com\",\n    \"name\": \"John Doe\",\n    \"phone\": \"70123456\",\n    \"user_id\": 9\n}"
+				},
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"John Doe\",\r\n  \"email\": \"john@example.com\",\r\n  \"phone\": \"70123456\",\r\n  \"address\": \"Hamra\",\r\n  \"country\": \"Lebanon\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/users/add",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"add"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.12.5"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 03 Oct 2025 19:10:23 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "117"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"address\": \"Hamra\",\n    \"country\": \"Lebanon\",\n    \"email\": \"john@example.com\",\n    \"name\": \"John Doe\",\n    \"phone\": \"70123456\",\n    \"user_id\": 11\n}"
 				}
 			]
 		}
